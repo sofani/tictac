@@ -1,15 +1,16 @@
 $(document).ready(function() {
   $(".dots").click(function() {
     $(".guys, p").css("visibility", "hidden");
-    $("td").css("visibility", "visible");
-    aiCo = "#333";
-    huCo = "white";
-    console.log("white");
+    $("td").css("display", "inline-block");
+    aiCo = "blue";
+    huCo = "red";
+    
   });
   $(".dots2").click(function() {
     $(".guys, p").css("visibility", "hidden");
-    $("td").css("visibility", "visible");
-    console.log("black");
+    $("td").css("display", "inline-block");
+     aiCo = "blue";
+     huCo = "red";
   });
 
   $("td").click(function() {
@@ -24,8 +25,8 @@ var huPlayer = "P";
 var aiPlayer = "C";
 var iter = 0;
 var round = 0;
-var aiCo = "white";
-var huCo = "#333";
+var aiCo = "red";
+var huCo = "blue";
 
 function move(element, player, color) {
   console.log("element"+ element.id);
@@ -37,7 +38,7 @@ function move(element, player, color) {
 
     if (winning(board, player)) {
       setTimeout(function() {
-        alert("YOU WIN");
+        alert("YOU WIN"); 
         reset();
       }, 500);
       return;
