@@ -1,14 +1,14 @@
 $(document).ready(function() {
   $(".dots").click(function() {
-    $(".guys, p").css("visibility", "hidden");
-    $("td").css("display", "inline-block");
+    // $(".guys, p").css("visibility", "hidden");
+    // $("td").css("display", "inline-block");
     aiCo = "blue";
     huCo = "red";
     
   });
   $(".dots2").click(function() {
-    $(".guys, p").css("visibility", "hidden");
-    $("td").css("display", "inline-block");
+    // $(".guys, p").css("visibility", "hidden");
+    // $("td").css("display", "inline-block");
      aiCo = "blue";
      huCo = "red";
   });
@@ -23,7 +23,7 @@ $(document).ready(function() {
 var board = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 var huPlayer = "P";
 var aiPlayer = "C";
-var iter = 0;
+ var iter = 0;
 var round = 0;
 var aiCo = "red";
 var huCo = "blue";
@@ -37,17 +37,17 @@ function move(element, player, color) {
     console.log(board);
 
     if (winning(board, player)) {
-      setTimeout(function() {
-        alert("YOU WIN"); 
-        reset();
-      }, 500);
-      return;
+        setTimeout(function() {
+          $('.dots1').text("YOU WIN"); 
+          reset();
+        }, 500);
+        return;
     } else if (round > 8) {
-      setTimeout(function() {
-        alert("TIE");
-        reset();
-      }, 500);
-      return;
+        setTimeout(function() {
+          $('.dots1').text("TIE");
+          reset();
+        }, 500);
+        return;
     } else {
       round++;
       var index = minimax(board, aiPlayer).index;
@@ -58,13 +58,13 @@ function move(element, player, color) {
       console.log(index);
       if (winning(board, aiPlayer)) {
         setTimeout(function() {
-          alert("YOU LOSE");
+           $('.dots1').text("YOU LOSE");
           reset();
         }, 500);
         return;
       } else if (round === 0) {
         setTimeout(function() {
-          alert("tie");
+        $('.dots1').text("TIE");
           reset();
         }, 500);
         return;

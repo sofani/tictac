@@ -1,5 +1,5 @@
 
-p {
+/*p {
   margin-left:-175px;
   margin-top: 20px;
   position:absolute;
@@ -10,34 +10,51 @@ p {
   border: 1px solid red;
   padding: 60px;
   padding-left: 80px;
-}
+}*/
 .dots{
   display:inline-block;
   background: blue;
   height:100px;
   width:100px;
-  float: left;
+
   border: 5px solid #333;
+}
+.dots1 {
+  display:inline-block;
+  background: none;
+  height:100px;
+  width:100px;
+
+  border: 5px solid #333;
+  font-size: 100%;
+  text-align: center;
 }
 .dots2 {
   display:inline-block;
   background: red;
   height:100px;
   width:100px;
-  float: right;
+ 
   border: 5px solid #333;
 }
 
 .guys{
-  position:absolute;
-  height:200px;
-  width:450px;
-  top:200px;
-  left:50%;
-  margin-left:-175px;
-  border: 1px solid red;
-  padding: 50px;
-  
+  /*position:absolute;*/
+ /* height:200px;*/
+  /*width:600px;*/
+ /* top:200px;
+  left:50%;*/
+  /*margin-left:-175px;*/
+/*  border: 1px solid red;
+  padding: 50px;*/
+  /*margin-left: 150px;*/
+ 
+
+  margin: 0 auto;
+
+  width: 600px;
+  padding-left: 150px;
+
 }
 
 td {
@@ -46,18 +63,25 @@ td {
   width: 100px;
   border-style: solid;
   border-width: 2px;
-  display: none;
-}
+  /*display: none;*/
 
-table{
+}
+.game {
+ /* border: 1px solid red;*/
+  margin: 0 auto;
+  width: 600px;
+  padding-left: 150px;
+  margin-bottom: 30px;
+}
+/*table{
   position:absolute;
   left:50%;
   margin-left:-150px;
   top:10%;
   border: solid 2px black;
 
-}
-html {
+}*/
+body {
   width:100%;
   height:100%;
   background:linear-gradient(#f7aeb7, #ffcccc, #ffeee6);
