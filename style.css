@@ -11,7 +11,7 @@
   padding: 60px;
   padding-left: 80px;
 }*/
-.dots{
+/*.dots{
   display:inline-block;
   background: blue;
   height:100px;
@@ -37,18 +37,19 @@
  
   border: 5px solid #333;
 }
+*/
 
-.guys{
   /*position:absolute;*/
  /* height:200px;*/
-  /*width:600px;*/
+
  /* top:200px;
   left:50%;*/
   /*margin-left:-175px;*/
 /*  border: 1px solid red;
   padding: 50px;*/
   /*margin-left: 150px;*/
- 
+  /*.guys{
+   width:600px;
 
   margin: 0 auto;
 
@@ -66,13 +67,14 @@ td {
   /*display: none;*/
 
 }
-.game {
+
  /* border: 1px solid red;*/
+ /*.game {
   margin: 0 auto;
   width: 600px;
   padding-left: 150px;
   margin-bottom: 30px;
-}
+}*/*/
 /*table{
   position:absolute;
   left:50%;
@@ -81,9 +83,72 @@ td {
   border: solid 2px black;
 
 }*/
-body {
+/*body {
   width:100%;
   height:100%;
   background:linear-gradient(#f7aeb7, #ffcccc, #ffeee6);
  
+}*/
+
+
+
+
+body
+{
+  font-family: 'Lato', sans-serif;
+  background:#333;
+  color:white;
+}
+table {
+  border: 1px solid red;
+}
+td
+{
+    width:80px;
+    height:80px;
+    border: solid 1px black;
+    text-align:center;
+    font-size:20pt;
+}
+
+td:hover
+{
+    background-color: #dbdbdb;
+    cursor:pointer;
+  color: black;
+}
+
+.tictactoe
+{
+  text-align:center;
+  margin:0 auto;
+  width:50%;
+  padding:10px 50px
+
+}
+.draw {
+  /*border: 1px solid red;*/
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 260px;
+  text-align: center;
+
+}
+.board
+{
+  float:left;
+  margin-left:20px;
+  width:60%;
+}
+
+.player
+{
+  float:left;
+  width:15%;
+}
+
+.player-points
+{
+  font-size:14pt;
 }
